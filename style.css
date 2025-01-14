@@ -1,0 +1,54 @@
+@font-face {
+    font-family: fn;
+    src: url(./6beea5b82e271474.p.ttf);
+}
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+ 
+html,body{
+width: 100%;
+height: 100%;
+font-family: 'fn';
+}
+
+
+#main{
+    background-image: linear-gradient(#f7d3a7,#fff);
+}
+#hero{
+    background-image: linear-gradient(rgb(252 201 199),#f7d3a7);
+}
+
+svg g:nth-child(1){
+    animation: spin 20s linear infinite
+}
+svg > g:nth-child(2n){
+    animation: spin 20s reverse linear infinite;
+}
+
+svg > g:nth-child(3n){
+    animation: spin 20s linear infinite;
+}
+svg > g:last-child{
+    animation: spin 20s linear infinite;
+}
+
+
+
+@keyframes spin {
+    to {
+        transform: rotate(1turn)
+    }
+    from {
+        transform: rotate(0turn)
+    }
+}
+
+
+
+/* .animate-spin {
+    animation: spin 1s linear infinite
+} */
